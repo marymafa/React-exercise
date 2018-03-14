@@ -1,9 +1,11 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from "./Form"
-import confirmationPage from  "./confirmationPage"
+import Form from "./Form";
 import './index.css';
+
+
+
 
 // class Square extends React.Component {
 //   constructor(props) {
@@ -23,11 +25,6 @@ import './index.css';
 //   }
 
 // }
-
-
-// ReactDOM.render(<Square />, document.getElementById("root"));https://jsfiddle.net/69z2wepo/130095/
-
-
 
 ReactDOM.render(<Form />, document.getElementById("root"))
 
