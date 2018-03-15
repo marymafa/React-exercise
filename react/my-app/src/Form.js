@@ -27,9 +27,8 @@ class Form extends React.Component {
       Gender: this.state.Gender
 
     }
-
-    e.push(form);
-    debugger;
+    let database=this.state
+    database.push({Form});
     this.setState({
       name: '',
       email: '',
@@ -75,6 +74,7 @@ class Form extends React.Component {
           </label>
           <button onClick={(e) => this.onSubmit(e)}>Send</button>
         </form>
+
       </div>
     );
   }
