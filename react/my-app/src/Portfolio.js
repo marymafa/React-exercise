@@ -20,6 +20,10 @@ class Portfolio extends React.Component {
                     </nav></strong>
                 </div>
                 <h1><em>Mary Mafa's Portfolio</em></h1>
+
+                <div>
+                    <li><img src="https://marymafa.github.io/02.jpg" alt="golf" /></li>
+                </div>
                 <div>
                     <p>
 
@@ -30,6 +34,9 @@ class Portfolio extends React.Component {
                          Now I'm building something interesting.I hate laziness because been lazy will not extend my life but decrease it.
                          I love reading like there is this quote says don't read success stories you will get the only message but read-only failure stories you will get ideas to get success.
 </p>
+                </div>
+                <div>
+                    <li><img src="https://raw.githubusercontent.com/marymafa/marymafa.github.io/master/809343.jpg" /></li>
                 </div>
 
             </div>
