@@ -20,13 +20,13 @@ class Form extends React.Component {
   onSubmit = (e) => {
     e.preventDefault();
     alert('thanks for submitting: ' + this.state.email);
-    const form = {
-      name: this.state.name,
-      email: this.state.email,
-      contactNo: this.state.contactNo,
-      Gender: this.state.Gender
+    // const form = {
+    //   name: this.state.name,
+    //   email: this.state.email,
+    //   contactNo: this.state.contactNo,
+    //   Gender: this.state.Gender
 
-    }
+    // }
     let database=this.state
     database.push({Form});
     this.setState({
