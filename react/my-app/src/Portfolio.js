@@ -36,7 +36,7 @@ class Portfolio extends React.Component {
 </p>
                 </div>
                 <div>
-                    <li><img src="https://raw.githubusercontent.com/marymafa/marymafa.github.io/master/809343.jpg" /></li>
+                    <li><img src="https://raw.githubusercontent.com/marymafa/marymafa.github.io/master/809343.jpg" alt="golf" /></li>
                 </div>
 
             </div>
