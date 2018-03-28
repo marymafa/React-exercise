@@ -7,7 +7,6 @@ import './index.css';
 class Markdown extends React.Component {
 	constructor(props) {
 	  super(props);
-	  
 	  this.state = {
 		source: ''
 	  };
@@ -15,31 +14,21 @@ class Markdown extends React.Component {
 	  this.handleChange = this.handleChange.bind(this);
 	
 	}   
-	handleChange(event) {
-	  this.setState({value: event.target.value});
+	handleChange(e) {
+	  this.setState({source: e.target.value});
 	}
-	createMarkdownPreview() {
-	  return {__html: ReactMarkdown(this.state.source)};
-	}
+	// createMarkdownPreview() {
+	//   return<p dangerouslySetInnerHTML={{__html: ReactMarkdown(this.props.source)}}/>;
+	// }
 	render() {
-	  return (
+	  return ( 
+
 	  <div>
-		<h1 >{this.props.name}</h1>
-		<div  class="row">
-		  <div class="container-fluid">
-			<div className="col-xs-12 col-sm-6">
-            MarkdownPreview;
-			<textarea  id="Markdown" class="Markdown" onChange={this.handleChange} source={this.state.source}></textarea>
-		  </div>
-	
-		  <div>Pre:</div>
-			<div id="markdown-des">           
-			  <div dangerouslySetInnerHTML={this.createMarkdownPreview()}></div>
-			</div>
-		  <div className="clear-all"></div>
-		</div>
-        </div>
-		<ReactMarkdown source={this.state.source}/>
+		<h1 >Markdown Preview</h1>
+			<textarea  id="Markdown" class="Markdown" onChange={this.handleChange}></textarea>
+           
+            <ReactMarkdown source={this.state.source} />
+            
 	  </div>
 	  )
 	}

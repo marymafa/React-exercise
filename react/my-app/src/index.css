@@ -68,7 +68,13 @@
     margin-left: 560px;
   } */
   body{
-    background-color:rgb(3, 3, 12);
+    background-color:blanchedalmond;
+    
+  }
+  textArea{
+    height: 80px;
+    width: 300px;
+    
   }
   
   /* #home{
