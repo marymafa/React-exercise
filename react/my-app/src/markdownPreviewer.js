@@ -1,10 +1,6 @@
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ReactMarkdown  from 'react-markdown';
-import './index.css';
 
-class Markdown extends React.Component {
+export default class MarkdownPreviewer extends React.Component {
 	constructor(props) {
 	  super(props);
 	  
@@ -13,23 +9,22 @@ class Markdown extends React.Component {
 	  };
 	  
 	  this.handleChange = this.handleChange.bind(this);
-	
+	  this.createMarkdownPreview = this.createMarkdownPreview.bind(this);
 	}   
 	handleChange(event) {
 	  this.setState({value: event.target.value});
 	}
 	createMarkdownPreview() {
-	  return {__html: ReactMarkdown(this.state.source)};
+	  return {__html: ReactMarkdown(this.state.value)};
 	}
 	render() {
 	  return (
 	  <div>
-		<h1 >{this.props.name}</h1>
-		<div  class="row">
-		  <div class="container-fluid">
-			<div className="col-xs-12 col-sm-6">
-            MarkdownPreview;
-			<textarea  id="Markdown" class="Markdown" onChange={this.handleChange} source={this.state.source}></textarea>
+		<h1 id="markdown-title">{this.props.name}</h1>
+		<div id="markdown-content">
+		  <div id="markdown-src">
+			<div>Src:</div>
+			<textarea type="text" onChange={this.handleChange} value={this.state.value}></textarea>
 		  </div>
 	
 		  <div>Pre:</div>
@@ -38,16 +33,9 @@ class Markdown extends React.Component {
 			</div>
 		  <div className="clear-all"></div>
 		</div>
-        </div>
 		<ReactMarkdown source={this.state.source}/>
 	  </div>
 	  )
 	}
   }
-
-ReactDOM.render(<Markdown />,document.getElementById('root'))
-
-
-
-
-
+  

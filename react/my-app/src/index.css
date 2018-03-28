@@ -63,15 +63,15 @@
      color: blue;
    } */
   
-   .img-circle {
+   /* .img-circle {
     border-radius: 50%;
     margin-left: 560px;
-  }
+  } */
   body{
-    background-color:#CCCCFF;
+    background-color:rgb(3, 3, 12);
   }
   
-  #home{
+  /* #home{
     overflow-y: 'scroll', auto;
     
   }
@@ -83,6 +83,6 @@
   }
   #Portfolio{
     overflow-y: 'scroll', auto;
-  }
+  } */
   
   
